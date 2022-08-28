@@ -24,61 +24,483 @@ display: none;
 .btn.disabled {
 pointer-events: none;
 opacity: 0.65;
-}</style></head>
+}
+</style></head>
 <body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..."></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <svg class="svg-inline--fa fa-bars ms-1" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"></path></svg><!-- <i class="fas fa-bars ms-1"></i> Font Awesome fontawesome.com -->
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="">How-Tos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">Forums</a></li>
-                    <li class="nav-item"><a class="nav-link">Subscribe</a></li>
-                    <li class="nav-item"><a class="nav-link">Login/Register</a></li>
-                    <li class="nav-item"><a class="nav-link">Search</a></li>
-                </ul>
-            </div>
+
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="assets/img/navbar-logo.svg" alt="..."></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <svg class="svg-inline--fa fa-bars ms-1" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"></path><!-- <i class="fas fa-bars ms-1"></i> Font Awesome fontawesome.com -->
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      HOW-TOs
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li>
+                            <a class="dropdown-item" href="#">
+                              Buyer's Guide &raquo;
+                            </a>
+                            <ul class="dropdown-menu dropdown-submenu">
+                              <li>
+                                <a class="dropdown-item" href="#">Appliances</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Automotive</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Electronics</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Furniture</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Home Furnishings</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Home Improvement</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Lawn & Garden</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Tools</a>
+                              </li>
+                            </ul>
+                          </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                              Cars, Trucks, Boats &raquo;
+                            </a>
+                            <ul class="dropdown-menu dropdown-submenu">
+                              <li>
+                                <a class="dropdown-item" href="#">Auto Buying & Selling</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Auto Maintenance</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Auto Repair</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Auto Safety</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Boating & Sailing</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Motorcycles</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">RVs & ATVs</a>
+                              </li>
+                            </ul>
+                          </li>
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            Decorating and Painting &raquo;
+                          </a>
+                          <ul class="dropdown-menu dropdown-submenu">
+                            <li>
+                              <a class="dropdown-item" href="#">Decorate with Color</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Decorating for Kids</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="category.html">Design by Room</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Designers & Ideas</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Exterior Painting</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Furnishings</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Home Accents</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Interior Painting</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Painting Tips & Tools</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Wallpaper</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Window Treatments</a>
+                              </li>
+                          </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                              Electrical and Electronics &raquo;
+                            </a>
+                            <ul class="dropdown-menu dropdown-submenu">
+                              <li>
+                                <a class="dropdown-item" href="#">Dishwasher</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Dryer</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Freezer </a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Home Electronics & Automation</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Home Lighting</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Household Refrigerators</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Other Kitchen Appliances</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Oven & Stove</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Purchasing Efficient
+                                  Appliances</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Washing Machines</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Wiring Projects</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              Exterior Home Improvement &raquo;
+                            </a>
+                            <ul class="dropdown-menu dropdown-submenu">
+                              <li>
+                                <a class="dropdown-item" href="#">Building Materials</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Chimneys</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Decks </a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Driveways & Sidewalks</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Garages</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Gutters & Drainage</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Lumber & Siding</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Pools, Spas, Hot Tubs 
+                                  & Saunas</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Roofing</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Sunrooms & Outdoor
+                                  Storage</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              From Our Experts &raquo;
+                            </a>
+                            <ul class="dropdown-menu dropdown-submenu">
+                              <li>
+                                <a class="dropdown-item" href="#">Interviews - 
+                                  Talking Shop</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Terms of the Trade</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">The Nuts and Bolts</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              Gardening & Outdoor &raquo;
+                            </a>
+                            <ul class="dropdown-menu dropdown-submenu">
+                              <li>
+                                <a class="dropdown-item" href="#">Fences</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Fertilizer, Compost 
+                                  & Soil</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Flowers & Ornamental
+                                  Plants</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Fruits, Vegetables 
+                                  & Herbs</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Garden Maintenance</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Greenhouses</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Landscaping</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Lawn Care</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Outdoor Pest Control</a>
+                              </li>  
+                              <li>
+                                <a class="dropdown-item" href="#">Planning a Garden</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Trees & Shrubs</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Utilizing Outdoor
+                                  Space</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Water Garden
+                                  Features</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              Green Home & Green Living &raquo;
+                            </a>
+                            <ul class="dropdown-menu dropdown-submenu">
+                              <li>
+                                <a class="dropdown-item" href="#">Eco-friendly Autos</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Environmental 
+                                  Protection</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Green Home</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Green Living</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              Hardware, Tools & Woodworking &raquo;
+                            </a>
+                            <ul class="dropdown-menu dropdown-submenu">
+                              <li>
+                                <a class="dropdown-item" href="#">Fastener & Nail
+                                  Hardware</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Hand Tools &
+                                  Carpentry Tools</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Lock & Security
+                                  Hardware</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Power Tools</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Woodworking Projects</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Workshop Planning</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              Household & Cleaning &raquo;
+                            </a>
+                            <ul class="dropdown-menu dropdown-submenu">
+                              <li>
+                                <a class="dropdown-item" href="#">Cleaning &
+                                  Stain Removal</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Indoor Hazards</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Indoor Pest Control</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Natural Disasters</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Organizing Your
+                                  Home</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Pets</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              Interior Home Improvement &raquo;
+                            </a>
+                            <ul class="dropdown-menu dropdown-submenu">
+                              <li>
+                                <a class="dropdown-item" href="#">Attics</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Basements</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Bathrooms</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Building & Remodeling</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Ceilings</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Doors</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Energy Efficient 
+                                  Homes</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Flooring</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Home Repair</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Kitchens</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Walls</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Windows</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              Lifestyle, Crafts & Recreation &raquo;
+                            </a>
+                            <ul class="dropdown-menu dropdown-submenu">
+                              <li>
+                                <a class="dropdown-item" href="#">Cooking</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Crafts & Hobbies</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Holidays & 
+                                  Celebrations</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Sports</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Travel</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Your Health</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              Plumbing & HVAC &raquo;
+                            </a>
+                            <ul class="dropdown-menu dropdown-submenu">
+                              <li>
+                                <a class="dropdown-item" href="#">Air Conditioning &
+                                  Ventilating</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Bathroom Repair &
+                                  Installation</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Heating</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Plumbing</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              General
+                            </a>
+                          </li>
+                    </ul>
+                </div>
+                <li class="nav-item"><a class="nav-link">Forums</a></li>
+                <li class="nav-item"><a class="nav-link">Subscribe</a></li>
+                <li class="nav-item"><a class="nav-link">Login/Register</a></li>
+                <li class="nav-item"><a class="nav-link fa fa-search"></a></li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
+    
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container">
+            <div class="masthead-subheading">100,000+ people are part of our inclusive community!</div>
+            <div class="masthead-heading text-uppercase">Join Our Community Today!</div>
+        </div>
+    </header>
     
     <!-- Category Grid-->
- <!-- Slideshow container -->
- <div class="slideshow-container">
-
-    <!-- Full-width images with number and caption text -->
-    <div class="mySlides fade">
-      <img src="assets/img/slider/img1.jpg" style="width:100%">
-    </div>
-  
-    <div class="mySlides fade">
-      <img src="assets/img/slider/img2.jpg" style="width:100%">
-    </div>
-  
-    <div class="mySlides fade">
-      <img src="assets/img/slider/img3.jpg" style="width:100%">
-    </div>
-    <div >
-        <h2 class="header2"><br>About the DIYer</br></h2>
-       <div class="buttonpadding"> <button class="button button4">Support KC Morgan</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="button button4">Add to Favorites</button></div>
+        <h2 class="header2"><br><img src="assets/img/kc.png" alt="Avatar" style="width:150px"> &nbsp;&nbsp;&nbsp;KC Morgan </h2><br>
+       <div class="buttonpadding"> <button class="button button4"><span class="iconify" data-icon="bxs:donate-heart"></span>
+        &nbsp; Support KC Morgan</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="button button4"><span class="iconify" data-icon="ri:heart-add-fill"></span>
+    &nbsp;            Add to Favorites</button></div>
     </div>
     <div>
-        <p><br></br>
-            KC Morgan has been a professional freelance writer since 2006. Over the last decade, KC has published thousands of articles and blog posts that have been read by millions.
+        <h3><br><br>About</h3>
+        <p>
+            KC Morgan has been a professional freelance writer since 2006. <br>Over the last decade, KC has published thousands of articles and blog posts that have been read by millions.<br>
 
-KC has written how-to articles, guides, and tutorials on different DIY ideas and home improvement projects. KC doesn’t just write about DIY projects, she does them in her spare time too. KC shares her DIY passion by creating original articles, so others can pursue their own home improvement goals and ideas too.
+KC has written how-to articles, guides, and tutorials on different DIY ideas and home improvement projects. <br><br>KC doesn’t just write about DIY projects, she does them in her spare time too. KC shares her DIY passion by creating original articles, so others can pursue their own home improvement goals and ideas too.
 
-KC’s articles have appeared in Popular Mechanics, and have been featured on DIY guru Bob Vila’s website. KC has written in-depth DIY articles for Sears.com and Overstock.com, as well as dozens of other websites. KC combines research and hands-on practice to provide useful tips and techniques for all sorts of DIY projects so that anyone can find ways to improve their own home and get the living space they want. KC works on her home every single day to learn new cleaning hacks, find DIY new projects, and discover new techniques to share with readers.
+KC’s articles have appeared in Popular Mechanics, and have been featured on DIY guru Bob Vila’s website. KC has written in-depth DIY articles for Sears.com and Overstock.com, as well as dozens of other websites.<br><br> KC combines research and hands-on practice to provide useful tips and techniques for all sorts of DIY projects so that anyone can find ways to improve their own home and get the living space they want. KC works on her home every single day to learn new cleaning hacks, find DIY new projects, and discover new techniques to share with readers.
 
 When she’s not writing or DIYing, KC enjoys watching college basketball, playing with her cats, and experimenting with new cupcake recipes.
       <br> <br>Connect with me :  <a href="https://www.twitter.com">Twitter</a>  <a href="https://www.facebook.com">Facebook</a>  <a href="https://www.instagram.com">Instagram</a></p>
        </br>
     </div>
-<!-- Sextions for categories-->
+<!-- Sections for categories-->
 <div><h2>Browse more of KC Morgan's Work</h2></div>
 <section class="page-section bg-light" id="portfolio">
         <div class="row">
@@ -87,9 +509,9 @@ When she’s not writing or DIYing, KC enjoys watching college basketball, playi
                 <div class="portfolio-item">
                     <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
                         <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><svg class="svg-inline--fa fa-plus fa-3x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z"></path></svg><!-- <i class="fas fa-plus fa-3x"></i> Font Awesome fontawesome.com --></div>
+                            <div class="portfolio-hover-content"><path fill="currentColor" d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z"></path><!-- <i class="fas fa-plus fa-3x"></i> Font Awesome fontawesome.com --></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/1.png" alt="...">
+                        <img class="img-fluid" src="assets/img/contributor/rent.jpg" alt="...">
                     </a>
                     <div class="portfolio-caption">
                         <div class="portfolio-caption-heading">Building a rental home in your neighbourhood</div>
@@ -101,9 +523,9 @@ When she’s not writing or DIYing, KC enjoys watching college basketball, playi
                 <div class="portfolio-item">
                     <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
                         <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><svg class="svg-inline--fa fa-plus fa-3x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z"></path></svg><!-- <i class="fas fa-plus fa-3x"></i> Font Awesome fontawesome.com --></div>
+                            <div class="portfolio-hover-content"><path fill="currentColor" d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z"></path><!-- <i class="fas fa-plus fa-3x"></i> Font Awesome fontawesome.com --></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/2.png" alt="...">
+                        <img class="img-fluid" src="assets/img/contributor/fence.jpg" alt="...">
                     </a>
                     <div class="portfolio-caption">
                         <div class="portfolio-caption-heading">How to install a chain link fence</div>
@@ -115,9 +537,9 @@ When she’s not writing or DIYing, KC enjoys watching college basketball, playi
                 <div class="portfolio-item">
                     <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
                         <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><svg class="svg-inline--fa fa-plus fa-3x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z"></path></svg><!-- <i class="fas fa-plus fa-3x"></i> Font Awesome fontawesome.com --></div>
+                            <div class="portfolio-hover-content"><path fill="currentColor" d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z"></path><!-- <i class="fas fa-plus fa-3x"></i> Font Awesome fontawesome.com --></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/3.png" alt="...">
+                        <img class="img-fluid" src="assets/img/contributor/home.jpg" alt="...">
                     </a>
                     <div class="portfolio-caption">
                         <div class="portfolio-caption-heading">9 reasons your home is not selling!</div>
@@ -133,9 +555,9 @@ When she’s not writing or DIYing, KC enjoys watching college basketball, playi
             <div class="row align-items-center">
                 <div class="col-lg-4 text-lg-start">Copyright © DoItYourself 2022</div>
                 <div class="col-lg-4 my-3 my-lg-0">
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><svg class="svg-inline--fa fa-twitter" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M459.4 151.7c.325 4.548 .325 9.097 .325 13.65 0 138.7-105.6 298.6-298.6 298.6-59.45 0-114.7-17.22-161.1-47.11 8.447 .974 16.57 1.299 25.34 1.299 49.06 0 94.21-16.57 130.3-44.83-46.13-.975-84.79-31.19-98.11-72.77 6.498 .974 12.99 1.624 19.82 1.624 9.421 0 18.84-1.3 27.61-3.573-48.08-9.747-84.14-51.98-84.14-102.1v-1.299c13.97 7.797 30.21 12.67 47.43 13.32-28.26-18.84-46.78-51.01-46.78-87.39 0-19.49 5.197-37.36 14.29-52.95 51.65 63.67 129.3 105.3 216.4 109.8-1.624-7.797-2.599-15.92-2.599-24.04 0-57.83 46.78-104.9 104.9-104.9 30.21 0 57.5 12.67 76.67 33.14 23.72-4.548 46.46-13.32 66.6-25.34-7.798 24.37-24.37 44.83-46.13 57.83 21.12-2.273 41.58-8.122 60.43-16.24-14.29 20.79-32.16 39.31-52.63 54.25z"></path></svg><!-- <i class="fab fa-twitter"></i> Font Awesome fontawesome.com --></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><svg class="svg-inline--fa fa-facebook-f" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M279.1 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.4 0 225.4 0c-73.22 0-121.1 44.38-121.1 124.7v70.62H22.89V288h81.39v224h100.2V288z"></path></svg><!-- <i class="fab fa-facebook-f"></i> Font Awesome fontawesome.com --></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><svg class="svg-inline--fa fa-linkedin-in" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M100.3 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.6 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path></svg><!-- <i class="fab fa-linkedin-in"></i> Font Awesome fontawesome.com --></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><svg class="svg-inline--fa fa-twitter" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M459.4 151.7c.325 4.548 .325 9.097 .325 13.65 0 138.7-105.6 298.6-298.6 298.6-59.45 0-114.7-17.22-161.1-47.11 8.447 .974 16.57 1.299 25.34 1.299 49.06 0 94.21-16.57 130.3-44.83-46.13-.975-84.79-31.19-98.11-72.77 6.498 .974 12.99 1.624 19.82 1.624 9.421 0 18.84-1.3 27.61-3.573-48.08-9.747-84.14-51.98-84.14-102.1v-1.299c13.97 7.797 30.21 12.67 47.43 13.32-28.26-18.84-46.78-51.01-46.78-87.39 0-19.49 5.197-37.36 14.29-52.95 51.65 63.67 129.3 105.3 216.4 109.8-1.624-7.797-2.599-15.92-2.599-24.04 0-57.83 46.78-104.9 104.9-104.9 30.21 0 57.5 12.67 76.67 33.14 23.72-4.548 46.46-13.32 66.6-25.34-7.798 24.37-24.37 44.83-46.13 57.83 21.12-2.273 41.58-8.122 60.43-16.24-14.29 20.79-32.16 39.31-52.63 54.25z"></path><!-- <i class="fab fa-twitter"></i> Font Awesome fontawesome.com --></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><svg class="svg-inline--fa fa-facebook-f" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M279.1 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.4 0 225.4 0c-73.22 0-121.1 44.38-121.1 124.7v70.62H22.89V288h81.39v224h100.2V288z"></path><!-- <i class="fab fa-facebook-f"></i> Font Awesome fontawesome.com --></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><svg class="svg-inline--fa fa-linkedin-in" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M100.3 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.6 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path><!-- <i class="fab fa-linkedin-in"></i> Font Awesome fontawesome.com --></a>
                 </div>
                 <div class="col-lg-4 text-lg-end">
                     <a class="link-dark text-decoration-none me-3" href="#!">About Us</a>
@@ -171,7 +593,7 @@ When she’s not writing or DIYing, KC enjoys watching college basketball, playi
                                     </li>
                                 </ul>
                                 <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                    <svg class="svg-inline--fa fa-xmark me-1" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="xmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"></path></svg><!-- <i class="fas fa-xmark me-1"></i> Font Awesome fontawesome.com -->
+                                    <svg class="svg-inline--fa fa-xmark me-1" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="xmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"></path><!-- <i class="fas fa-xmark me-1"></i> Font Awesome fontawesome.com -->
                                     Close Project
                                 </button>
                             </div>
@@ -206,7 +628,7 @@ When she’s not writing or DIYing, KC enjoys watching college basketball, playi
                                     </li>
                                 </ul>
                                 <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                    <svg class="svg-inline--fa fa-xmark me-1" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="xmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"></path></svg><!-- <i class="fas fa-xmark me-1"></i> Font Awesome fontawesome.com -->
+                                    <svg class="svg-inline--fa fa-xmark me-1" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="xmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"></path><!-- <i class="fas fa-xmark me-1"></i> Font Awesome fontawesome.com -->
                                     Close Project
                                 </button>
                             </div>
@@ -241,7 +663,7 @@ When she’s not writing or DIYing, KC enjoys watching college basketball, playi
                                     </li>
                                 </ul>
                                 <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                    <svg class="svg-inline--fa fa-xmark me-1" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="xmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"></path></svg><!-- <i class="fas fa-xmark me-1"></i> Font Awesome fontawesome.com -->
+                                    <svg class="svg-inline--fa fa-xmark me-1" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="xmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"></path><!-- <i class="fas fa-xmark me-1"></i> Font Awesome fontawesome.com -->
                                     Close Project
                                 </button>
                             </div>
@@ -276,7 +698,7 @@ When she’s not writing or DIYing, KC enjoys watching college basketball, playi
                                     </li>
                                 </ul>
                                 <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                    <svg class="svg-inline--fa fa-xmark me-1" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="xmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"></path></svg><!-- <i class="fas fa-xmark me-1"></i> Font Awesome fontawesome.com -->
+                                    <svg class="svg-inline--fa fa-xmark me-1" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="xmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"></path><!-- <i class="fas fa-xmark me-1"></i> Font Awesome fontawesome.com -->
                                     Close Project
                                 </button>
                             </div>
@@ -311,7 +733,7 @@ When she’s not writing or DIYing, KC enjoys watching college basketball, playi
                                     </li>
                                 </ul>
                                 <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                    <svg class="svg-inline--fa fa-xmark me-1" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="xmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"></path></svg><!-- <i class="fas fa-xmark me-1"></i> Font Awesome fontawesome.com -->
+                                    <svg class="svg-inline--fa fa-xmark me-1" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="xmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"></path><!-- <i class="fas fa-xmark me-1"></i> Font Awesome fontawesome.com -->
                                     Close Project
                                 </button>
                             </div>
@@ -346,7 +768,7 @@ When she’s not writing or DIYing, KC enjoys watching college basketball, playi
                                     </li>
                                 </ul>
                                 <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                    <svg class="svg-inline--fa fa-xmark me-1" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="xmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"></path></svg><!-- <i class="fas fa-xmark me-1"></i> Font Awesome fontawesome.com -->
+                                    <svg class="svg-inline--fa fa-xmark me-1" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="xmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"></path><!-- <i class="fas fa-xmark me-1"></i> Font Awesome fontawesome.com -->
                                     Close Project
                                 </button>
                             </div>
@@ -357,14 +779,18 @@ When she’s not writing or DIYing, KC enjoys watching college basketball, playi
         </div>
     </div>
     <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/popper.min.js.map"></script> -->
+    <!-- Core theme JS-->  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <!-- * *                               SB Forms JS                               * *-->
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-
-
-</body></html>
+    <!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
+<!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>-->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<!-- <script type="text/javascript" src="js/bootsnav.js"></script> -->
+ <script src="js/scripts.js"></script>
+ <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+</body></html>  
